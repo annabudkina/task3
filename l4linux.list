@@ -1,0 +1,20 @@
+
+modaddr 0x01100000
+
+default-kernel fiasco -serial_esc
+default-bootstrap bootstrap
+
+
+entry L4Linux-mag-x86
+roottask moe rom/l4lx-gfx.cfg
+module l4re
+module ned
+module l4lx-gfx.cfg
+module ex_clntsrv-server
+module io
+module fb-drv
+module mag
+module x86-legacy.devs
+module l4lx-x86.io
+module vmlinuz
+module ramdisk-x86.rd

@@ -1,0 +1,5 @@
+insmod client_mod.ko
+cd dev
+mknod encrdev c 111 1
+echo hello world>>encrdev
+cat encrdev
